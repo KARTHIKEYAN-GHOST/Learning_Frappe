@@ -263,7 +263,7 @@ app_license = "mit"
 # ignore_translatable_strings_from = []
 
 doc_events = {
-    "ToDoo": {
-        "validate": "learning_frappe.learning_frappe.events.todoo.validate_todoo"
-    }
+    "ToDoo": {"validate": "learning_frappe.learning_frappe.events.todoo.validate_todoo"}
 }
+
+scheduler_events = {"daily": ["learning_frappe.utils.scheduler.daily_maintenance"]}

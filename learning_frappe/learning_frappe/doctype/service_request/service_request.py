@@ -32,8 +32,8 @@ class ServiceRequest(Document):
 
         self.calculate_amount()
 
-        if self.status == "In Progress":
-            create_doc()
+        # if self.status == "In Progress":
+        #     create_doc()
 
     def calculate_amount(self):
         total = 0

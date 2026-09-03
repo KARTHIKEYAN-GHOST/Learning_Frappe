@@ -7,19 +7,34 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "description"
+  "due_date",
+  "description",
+  "status"
  ],
  "fields": [
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "default": "Today",
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nClosed"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-02 18:12:04.556057",
+ "modified": "2026-09-03 10:28:01.985827",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
  "name": "ToDoo",
