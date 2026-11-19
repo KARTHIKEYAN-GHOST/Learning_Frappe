@@ -39,7 +39,7 @@ def todoo_task():
 			select name, description
             from `tabToDoo`
             order by creation desc
-            limlit %(limit)s
+            limit %(limit)s
 		""",
         {"limit": 5},
         as_dict=True,
